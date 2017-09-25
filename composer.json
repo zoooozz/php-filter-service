@@ -1,0 +1,24 @@
+{
+  "require": {
+        "php": ">=7.0.1",
+        "hprose/hprose-swoole": ">=2.0.0",
+        "monolog/monolog": ">=1.23.0"
+  },
+
+  "autoload": {
+        "classmap": [
+            "app"
+        ]
+  },
+
+  "scripts": {
+        "post-install-cmd": [
+            "composer dump -o"
+        ],
+    
+        "post-update-cmd": [
+            "composer dump -o"
+        ]
+  }
+
+}
