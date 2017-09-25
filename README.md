@@ -26,6 +26,15 @@
     
 ### 项目文档说明
 
+SQL
+
+CREATE TABLE `filter_keywords` (
+  `id` int(11) unsigned NOT NULL AUTO_INCREMENT COMMENT '主键ID',
+  `keywords` varchar(16) NOT NULL DEFAULT '' COMMENT '关键词',
+  `ctime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '创建时间',
+  `mtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '更新时间',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8;
     
 
 敏感词检测
